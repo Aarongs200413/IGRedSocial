@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Registro";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/Content/css/Registro.css">
+</head>
+
+<body>
+    <div class="contenido">
+        <div class="log-on border_insc">
+            <div class="logo">
+                <img src="~/Content/img/instagram-logo-black-on-white.png" alt="Instagram Logo">
+            </div>
+            <div class="info">
+                <p>Regístrate para ver fotos y vídeos de tus amigos.</p>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com" class="fb-btn">
+                    <img src="~/Content/img/icons8-facebook-50.png" alt="Icono facebook" class="fb-icono">
+                    Iniciar sesión con Facebook
+                </a>
+            </div>
+            <div class="separador">
+                <span class="linea"></span>
+                <span class="o">o</span>
+                <span class="linea"></span>
+            </div>
+            <form>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
+                <div>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo">
+                </div>
+                <div>
+                    <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+                </div>
+            </form>
+            <div class="info-2">
+                <p>
+                    Es posible que los usuarios de nuestro servicio hayan subido tu información de contacto en
+                    Instagram.<a href="https://www.facebook.com/help/instagram/261704639352628">Más información</a>
+                </p>
+            </div>
+            <div class="info-3">
+                <p>
+                    Al registrarte, aceptas nuestras<a href="https://help.instagram.com/581066165581870/?locale=es_LA"> Condiciones</a>, nuestra<a href="https://www.facebook.com/privacy/policy">
+                        Política de
+                        Privacidad
+                    </a>y nuestra<a href="https://privacycenter.instagram.com/policies/cookies/"> Política de cookies.</a>
+                </p>
+            </div>
+            <a href="/Inicio.html">
+                <button class="log_btn">
+                    Registrarte
+                </button>
+            </a>
+        </div>
+        <div class="registro border_insc">
+            <p>
+                ¿Tienes una cuenta? <a href="@Url.Action("Login", "Home")"><br>Entrar</a>
+            </p>
+        </div>
+        <div class="descargas">
+            <p>Descarga la aplicación.</p>
+            <div>
+                <img src="~/Content/img/google_play_icon.png" alt="Icono de google play">
+                <img src="~/Content/img/microsoft-icon.png" alt="Icono de microsoft">
+            </div>
+        </div>
+    </div>
+    <footer class="links">
+        <div class="footer-container">
+            <a href="https://about.meta.com">Meta</a>
+            <a href="https://about.instagram.com">Información</a>
+            <a href="https://about.instagram.com/blog/">Blog</a>
+            <a href="https://about.instagram.com/about-us/careers">Empleo</a>
+            <a href="https://help.instagram.com">Ayuda</a>
+            <a href="https://help.instagram.com">API</a>
+            <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacidad</a>
+            <a href="https://help.instagram.com/581066165581870/">Condiciones</a>
+            <a href="https://www.instagram.com/explore/locations/">Ubicaciones</a>
+            <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+            <a href="https://www.threads.net">Threads</a>
+            <a href="https://www.facebook.com/help/instagram/261704639352628">Subir contactos y personas no usuarias</a>
+            <a href="#">Meta Verified</a>
+            <select class="idioma">
+                <option value="es">Español (España)</option>
+                <option value="en">English (United States)</option>
+                <option value="fr">Français (France)</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Português (Brasil)</option>
+            </select>
+            <span>© 2025 Instagram from Meta</span>
+        </div>
+    </footer>
+</body>
+
+</html>

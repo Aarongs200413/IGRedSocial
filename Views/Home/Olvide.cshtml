@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Olvide";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recuperar Contraseña</title>
+        <link rel="stylesheet" href="~/Content/css/Olvide.css">
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="logoig">
+                <img src="~/Content/img/instagram-logo-black-on-white.png" alt="Logo de Instagram" />
+            </div>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-enter">Entrar</a>
+                <a href="#" class="btn btn-register">Registrarte</a>
+            </div>
+        </header>
+
+        <div class="contenido">
+            <div class="log-on border_insc">
+                <div class="logo">
+                    <img src="~/Content/img/candado2.jpg" alt="Instagram Logo">
+                </div>
+                <p class="info">¿Tienes problemas para entrar?</p>
+                <p class="info-2">Introduce tu correo electrónico, número de teléfono o nombre de usuario y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.</p>
+                <form>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Teléfono, usuario o correo electrónico">
+                    </div>
+                </form>
+                <a href="/Inicio.html">
+                    <button class="log_btn">
+                        Enviar enlace de acceso
+                    </button>
+                </a>
+                <div class="olvide">
+                    <a href="https://help.instagram.com/374546259294234">
+                        ¿No puedes cambiar tu contraseña?
+                    </a>
+                </div>
+                <div class="otros">
+                    <div class="separador">
+                        <span class="linea"></span>
+                        <span class="o">o</span>
+                        <span class="linea"></span>
+                    </div>
+                </div>
+                <p class="l1">
+                    <a href="@Url.Action("Registro", "Home")">Crear cuenta nueva</a>
+                </p>
+
+            </div>
+            <p class="relleno">
+                <a href="@Url.Action("Registro", "Home")" class="volver-btn">Volver al inicio de sesión</a>
+            </p>
+        </div>
+        <footer class="links">
+            <div class="footer-container">
+                <a href="https://about.meta.com">Meta</a>
+                <a href="https://about.instagram.com">Información</a>
+                <a href="https://about.instagram.com/blog/">Blog</a>
+                <a href="https://about.instagram.com/about-us/careers">Empleo</a>
+                <a href="https://help.instagram.com">Ayuda</a>
+                <a href="https://help.instagram.com">API</a>
+                <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacidad</a>
+                <a href="https://help.instagram.com/581066165581870/">Condiciones</a>
+                <a href="https://www.instagram.com/explore/locations/">Ubicaciones</a>
+                <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+                <a href="https://www.threads.net">Threads</a>
+                <a href="https://www.facebook.com/help/instagram/261704639352628">Subir contactos y personas no usuarias</a>
+                <a href="#">Meta Verified</a>
+                <select class="idioma">
+                    <option value="es">Español (España)</option>
+                    <option value="en">English (United States)</option>
+                    <option value="fr">Français (France)</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português (Brasil)</option>
+                </select>
+                <span>© 2025 Instagram from Meta</span>
+            </div>
+        </footer>
+    </body>
+</html>

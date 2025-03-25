@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/Content/css/Login.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="login">
+            <div class="images d-none d-lg-block">
+                <div class="frame">
+                    <img src="~/Content/img/home-phones.png" alt="Carcasa de celulares">
+                    <div class="slider">
+                        <div id="carouselExampleSlidesOnly" class="carrusel slide carousel-fade"
+                             data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/Content/img/screenshot1.png" class="d-block w-100" alt="Captura 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/Content/img/screenshot2.png" class="d-block w-100" alt="Captura 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/Content/img/screenshot3.png" class="d-block w-100" alt="Captura 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/Content/img/screenshot4.png" class="d-block w-100" alt="Captura 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenido">
+                <div class="log-on border_insc">
+                    <div class="logo">
+                        <img src="~/Content/img/instagram-logo-black-on-white.png" alt="Instagram Logo">
+                    </div>
+                    <form>
+                        <div>
+                            <input type="email" name="email" id="email"
+                                   placeholder="Teléfono, usuario o correo electrónico">
+                        </div>
+                        <div>
+                            <input type="password" name="password" id="password" placeholder="Contraseña">
+                        </div>
+                    </form>
+                    <a href="/Inicio.html">
+                        <button class="log_btn">
+                            Entrar
+                        </button>
+                    </a>
+                    <div class="otros">
+                        <div class="separador">
+                            <span class="linea"></span>
+                            <span class="o">o</span>
+                            <span class="linea"></span>
+                        </div>
+                        <div class="facebook">
+                            <a href="https://www.facebook.com">
+                                <img src="~/Content/img/facebook.png" alt="Icono facebook">
+                                Iniciar sesión con Facebook
+                            </a>
+                        </div>
+                        <div class="olvide">
+                            <a href="@Url.Action("Olvide","Home")">
+                                ¿Has Olvidaste tu contraseña?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="registro border_insc">
+                    <p>
+                        ¿No tienes una cuenta? <a href="@Url.Action("Registro", "Home")">Regístrate</a>
+                    </p>
+                </div>
+                <div class="descargas">
+                    <p>Descarga la aplicación.</p>
+                    <div>
+                        <img src="~/Content/img/google_play_icon.png" alt="Icono de google play">
+                        <img src="~/Content/img/microsoft-icon.png" alt="Icono de microsoft">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="links">
+        <div class="footer-container">
+            <a href="https://about.meta.com">Meta</a>
+            <a href="https://about.instagram.com">Información</a>
+            <a href="https://about.instagram.com/blog/">Blog</a>
+            <a href="https://about.instagram.com/about-us/careers">Empleo</a>
+            <a href="https://help.instagram.com">Ayuda</a>
+            <a href="https://help.instagram.com">API</a>
+            <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacidad</a>
+            <a href="https://help.instagram.com/581066165581870/">Condiciones</a>
+            <a href="https://www.instagram.com/explore/locations/">Ubicaciones</a>
+            <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+            <a href="https://www.threads.net">Threads</a>
+            <a href="https://www.facebook.com/help/instagram/261704639352628">Subir contactos y personas no usuarias</a>
+            <a href="#">Meta Verified</a>
+            <select class="idioma">
+                <option value="es">Español (España)</option>
+                <option value="en">English (United States)</option>
+                <option value="fr">Français (France)</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Português (Brasil)</option>
+            </select>
+            <span>© 2025 Instagram from Meta</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
